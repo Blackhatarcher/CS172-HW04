@@ -11,6 +11,19 @@
 #include <iomanip>
 using namespace std;
 
+int* doubleCapacity(const int* list, int size) {
+	//create the new array that will be returned
+	int* newlist = new int[size * 2];
+	//populate list into newlist
+	for (int i = 0; i < size; i++) {
+		newlist[i] = list[i];
+	}
+	//and I think I wanna delete the old list
+	delete list;
+	//I don't delete the newlist becuase I need to return it 
+	//presumably it will get deleted later on in the program
+	return newlist;
+}
 
 int main()
 {
@@ -18,7 +31,6 @@ int main()
 	while (playing)
 	{
 		//for 11.3
-
 
 
 		int finalanswer = 0;
