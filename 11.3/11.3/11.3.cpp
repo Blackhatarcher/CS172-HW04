@@ -11,6 +11,7 @@
 #include <iomanip>
 using namespace std;
 
+
 int* doubleCapacity(const int* list, int size) {
 	//create the new array that will be returned
 	int* newlist = new int[size * 2];

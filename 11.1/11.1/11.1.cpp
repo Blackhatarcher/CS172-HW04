@@ -9,9 +9,8 @@
 #include <ctime>
 #include <cctype>
 #include <iomanip>
+
 using namespace std;
-
-
 int main()
 {
 	bool playing = true;
