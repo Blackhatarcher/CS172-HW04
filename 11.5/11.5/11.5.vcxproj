@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{310E930A-846A-47EF-B7EB-3544ED83A9FC}</ProjectGuid>
+    <ProjectGuid>{EFB0DAD8-0B2E-498E-9C91-DF48F8DA4491}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My115</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
