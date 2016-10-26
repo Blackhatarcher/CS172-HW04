@@ -16,17 +16,16 @@ int main()
 	bool playing = true;
 	while (playing)
 	{
-		Course course ("French",20);
+		Course course ("French",10);
 		course.addStudent("Harry");
 		course.addStudent("Ron");
 		course.addStudent("Hermione");
 		course.dropStudent("Ron");//because he fails classes
 		//cout << "Students left are " << course.getStudents()<< endl;
 		//haha almost fell for that! I need to loop
-		
-		for (int i = 0; i < course.getNumberOfStudents(); i++) {
-			cout << "Student: " << course.getStudents[i] << endl;
-		}
+		//for (int i = 0; i < course.getNumberOfStudents(); i++) {
+		//	cout << "Student: "<< endl;
+		//}
 
 
 		int finalanswer = 0;
