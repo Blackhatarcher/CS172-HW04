@@ -20,7 +20,8 @@ int* doubleCapacity(const int* list, int size) {
 		newlist[i] = list[i];
 	}
 	//and I think I wanna delete the old list
-	delete list;
+	delete[] list;
+
 	//I don't delete the newlist becuase I need to return it 
 	//presumably it will get deleted later on in the program
 	return newlist;
