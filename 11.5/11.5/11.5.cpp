@@ -8,9 +8,18 @@
 #include <cctype>
 #include <iomanip>
 using namespace std;
-int FindSmallest(int* list, int s) {
-	int num = 0;
-	return num;
+int FindSmallest(int list[], int s) {
+	//create a temp
+	int *temp = new int;
+	//set temp to the first value in array
+	*temp = list[1];
+	//loop through array to find values less than temp
+	for (int i = 0; i < s; i++) {
+		if (list[i] < *temp) {
+			*temp = list[i];
+		}
+	}
+	return *temp;
 }
 int main()
 {
@@ -18,18 +27,9 @@ int main()
 	while (playing)
 	{
 		int size = 8;
-		int* array = new int[size];
 		int nums[8]= {1,2,4,5,10,100,2,-22};
-		for (int i = 0; i < size; i++)
-		{
-			array[i] = nums[i];
-		}
-		//debugging
-		for (int i = 0; i < size; i++)
-		{
-			cout << array[i] << endl;
-		}
-		int smallest = FindSmallest(array, size);
+		//int* array = nums;
+		cout<< "The smallest is " << FindSmallest(nums, size) << endl;
 
 		int finalanswer = 0;
 		cout << "Enter 1 to exit" << endl;
@@ -37,7 +37,7 @@ int main()
 		if (finalanswer == 1) {
 			playing = false;
 		}
-		delete array;
+		//delete array;
 	}
 
 
