@@ -21,11 +21,11 @@ int main()
 		course.addStudent("Ron");
 		course.addStudent("Hermione");
 		course.dropStudent("Ron");//because he fails classes
-		//cout << "Students left are " << course.getStudents()<< endl;
+		cout << "Students left are " << endl;
 		//haha almost fell for that! I need to loop
-		//for (int i = 0; i < course.getNumberOfStudents(); i++) {
-		//	cout << "Student: "<< endl;
-		//}
+		for (int i = 0; i < course.getNumberOfStudents(); i++) {
+		cout << course.getStudent(i)<< endl;
+		}
 
 
 		int finalanswer = 0;

@@ -23,9 +23,11 @@ void Course::dropStudent(const string& name) {
 	//and populate it with all the old students but not the dropped student
 	//and set students to the new stduents array
 	string* newstudents = new string[numberOfStudents - 1];
+	int index = 0;
 	for (int i = 0; i < numberOfStudents; i++) {
 		if (students[i] != name) {
-			newstudents[i] = students[i];
+			newstudents[index] = students[i];
+			index++;
 		}
 	}
 	//and reduce number of students
@@ -41,6 +43,9 @@ int Course::getNumberOfStudents()const {
 	return numberOfStudents;
 }
 
+string Course:: getStudent(int i) {
+	return students[i];
+}
 void Course::clear() {
 	//just reset students to be empty and number of students to 0
 	string* newstudents = new string[capacity];

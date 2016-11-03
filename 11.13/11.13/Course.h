@@ -15,6 +15,7 @@ public:
 	void addStudent(const string &name);
 	void dropStudent(const string &name);
 	string getCourseName() const;
+	string getStudent(int i);
 	Course(const string &courseName,int capacity);
 	~Course();
 	void clear();
